@@ -1,0 +1,76 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #666;
+  background: #fff;
+  font-family: 'Averia Sans Libre', cursive;
+}
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  cursor: default;
+  text-align: center;
+}
+a {
+  color: #666;
+  text-decoration: none;
+  border-bottom: 1px solid #c90707;
+}
+a:hover, a.active {
+  color: #c90707;
+  border-bottom: 0;
+}
+p {
+  margin: 0.5em 0;
+}
+
+/* Header */
+header {
+  padding: 7em 0 0;
+}
+h1 {
+  color: #444;
+  padding: 0;
+  margin: 0.5em 0;
+  font-size: 2em;
+  font-weight: normal;
+}
+h1 span {
+  color: #666;
+  font-size: 50%;
+}
+.logo {
+  width: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Main */
+section {
+  margin: 1.5em 0;
+}
+
+/* Form */
+.url {
+  width: 60%;
+  padding: .5em .6em;
+  margin: 0;
+  font-size: 90%;
+  line-height: 16px;
+  text-align: left;
+  border: 1px solid #c90707;
+  border-color: #c90707;
+}
+.download {
+  padding: .5em 1em;
+  margin: 0;
+  font-family: inherit;
+  font-size: 90%;
+  line-height: 16px;
+  color: #fff;
+  background-color: #c90707;
+  text-decoration: none;
+  border: 1px solid #c90707;
+}
