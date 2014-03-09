@@ -1,8 +1,25 @@
-<% include header %>
-
-<form class="pure-form" method="get">
-  <input type="text" name="url" placeholder="Your link goes here..." class="url" />
-  <button type="submit" class="download">Download</button>
-</form>
-
-<% include footer %>
+<!doctype html>
+<html>
+<head>
+  <title>dwnldr for YouTube</title>
+  <meta name="description" content="A video downloader for YouTube." />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="icon" type="image/png" href="logo.png">
+  <link href="http://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <h1><img src="logo.png" class="logo" />dwnldr<span> for YouTube</span></h1>
+  </header>
+  <section>
+    <form class="pure-form" method="get">
+      <input type="text" name="url" placeholder="Your link goes here..." class="url" />
+      <button type="submit" class="download">Download</button>
+    </form>
+  </section>
+  <footer>
+    <p>built by <a href="http://venkatagiri.me" target="_blank">venkatagiri</a></p>
+  </footer>
+</body>
+</html>
