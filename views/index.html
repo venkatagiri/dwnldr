@@ -13,10 +13,25 @@
     <h1><img src="logo.png" class="logo" />dwnldr<span> for YouTube</span></h1>
   </header>
   <section>
-    <form class="pure-form" method="get">
-      <input type="text" name="url" placeholder="Your link goes here..." class="url" />
-      <button type="submit" class="download">Download</button>
-    </form>
+    <article class="download-form">
+      <form method="get">
+        <input type="text" name="url" placeholder="Your link goes here..." class="url" value="<%= url || '' %>"/>
+        <button type="submit" class="download">Download</button>
+      </form>
+    </article>
+
+    <% if(formats.length > 0) { %>
+    <article class="download-options">
+      <ul class="list">
+      <% formats.forEach(function(el, index) { %>
+        <li>
+          <a href="?url=<%= url %>&format=<%= el.format %>" target="_blank">Download</a>
+          (<%= el.extension %> format - <%= el.resolution %> resolution)
+        </li>
+      <% }); %>
+      </ul>
+    </article>
+    <% } %>
   </section>
   <footer>
     <p>built by <a href="http://venkatagiri.me" target="_blank">venkatagiri</a></p>
