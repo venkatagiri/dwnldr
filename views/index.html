@@ -20,6 +20,10 @@
       </form>
     </article>
 
+    <% if(msg) { %>    
+    <span class="msg">&gt; <%= msg %></span>
+    <% } %>
+
     <% if(formats.length > 0) { %>
     <article class="download-options">
       <ul class="list">

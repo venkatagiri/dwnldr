@@ -49,7 +49,14 @@ h1 span {
 
 /* Main */
 section {
-  margin: 1.5em 0;
+  margin: 1em 0;
+}
+.msg {
+  display: inline-block;
+  margin: 0.5em 0;
+  padding: 0.5em 1em;
+  font-size: 90%;
+  color: #c90707;
 }
 
 /* Form */
@@ -61,7 +68,9 @@ section {
   line-height: 16px;
   text-align: left;
   border: 1px solid #c90707;
-  border-color: #c90707;
+}
+.url:focus {
+  outline: 0;
 }
 .download {
   padding: .5em 1em;
