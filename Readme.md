@@ -1,3 +1,3 @@
-# [dwnldr](http://venkatagiri.me/dwnldr)
+# dwnldr
 
-A video downloader for YouTube.
+A video downloader for YouTube - http://venkatagiri.me/dwnldr
