@@ -15,9 +15,13 @@
   <section>
     <article class="download-form">
       <form method="get">
-        <input type="text" name="url" placeholder="Your link goes here..." class="url" value="<%= url || '' %>"/>
+        <input type="text" name="url" placeholder="Your link goes here..." id="url" class="url" value="<%= url || '' %>"/>
         <button type="submit" class="download">Download</button>
       </form>
+      <script>
+        var url = document.getElementById('url');
+        if(url.value === '') url.focus();
+      </script>
     </article>
 
     <% if(msg) { %>    
