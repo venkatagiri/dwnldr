@@ -33,7 +33,7 @@
       <ul class="list">
       <% formats.forEach(function(el, index) { %>
         <li>
-          <a href="?<%= qs.stringify({url: url , format: el.format}) %>" target="_blank">Download</a>
+          <a href="?<%= qs.stringify({url: url , format: el.format}) %>">Download</a>
           (<%= el.extension %> format - <%= el.resolution %> resolution)
         </li>
       <% }); %>
